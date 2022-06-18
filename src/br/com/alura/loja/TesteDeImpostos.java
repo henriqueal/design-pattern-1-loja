@@ -7,9 +7,9 @@ import java.math.BigDecimal;
 
 public class TesteDeImpostos {
     public static void main(String[] args) { 
-        CalculadoraDeDesconto calculadoraDeDesconto = new CalculadoraDeDesconto();
-        System.out.println(calculadoraDeDesconto.calcular(new Orcamento(new BigDecimal("200"), 6)));
-        System.out.println(calculadoraDeDesconto.calcular(new Orcamento(new BigDecimal("1000"), 1)));
+        CalculadoraDeDesconto cadeiaDeDescontos = new CalculadoraDeDesconto();
+        System.out.println(cadeiaDeDescontos.calcular(new Orcamento(new BigDecimal("200"), 6)));
+        System.out.println(cadeiaDeDescontos.calcular(new Orcamento(new BigDecimal("1000"), 1)));
 
     }
 }
