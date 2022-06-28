@@ -10,6 +10,10 @@ public class TesteDeImpostos {
         CalculadoraDeDesconto cadeiaDeDescontos = new CalculadoraDeDesconto();
         System.out.println(cadeiaDeDescontos.calcular(new Orcamento(new BigDecimal("200"), 6)));
         System.out.println(cadeiaDeDescontos.calcular(new Orcamento(new BigDecimal("1000"), 1)));
+        Orcamento orcamento = new Orcamento(new BigDecimal("500"), 6);
+        orcamento.aplicarDescontoExtra();
+        System.out.println(orcamento.getValor());
+        System.out.println(cadeiaDeDescontos.calcular(orcamento));
 
     }
 }
